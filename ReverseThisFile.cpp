@@ -47,7 +47,7 @@ int main()
     char ch;
     in.seekg(0, std::ios::end);
     int position = in.tellg();
-    for (int i = position - 1; i >= 3; i--)
+    for (int i = position - 1; i >= 0; i--)
     {
         in.seekg(i, std::ios::beg);
         in.get(ch);
